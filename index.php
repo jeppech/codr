@@ -9,25 +9,8 @@
 	 */
 
 	define("DIRECT_SCRIPT_ACCESS", 	true);
-	define("ENVIRONMENT",			"development"); 		//development, testing, production
 
-	if (defined("ENVIRONMENT"))
-	{
-		switch (ENVIRONMENT)
-		{
-			case "development":
-				error_reporting(E_ALL);
-			break;
-
-			case "testing":
-			case "production":
-				error_reporting(0);
-			break;
-
-			default:
-				exit("The environment has an invalid value.");
-		}
-	}
+	error_reporting(E_ALL);
 
 	/* Set the directory to current, if this is a CLI request. */
 

@@ -73,7 +73,7 @@
 
 			$this->_set_method_args($segments);
 
-			if (!file_exists(APPPATH."controllers/".ENVIRONMENT."/".$segments[1].EXT))
+			if (!file_exists(APPPATH."controllers/".$segments[1].EXT))
 			{
 				if (isset($this->routes["404_override"]) && !empty($this->routes["404_override"]))
 				{

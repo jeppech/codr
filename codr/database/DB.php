@@ -173,7 +173,7 @@
 		 * @var integer
 		 */
 		private $_affected_rows = 0;
-		
+
 		/**
 		 * Contains the last query result if any
 		 * @var object/array
@@ -195,7 +195,7 @@
 			{
 				show_error('Database',
 					'The selected connection <b>'.$cfg['connection'].'</b>, '
-					.'is not valid.<br />Please check your configuration at <b>'.APPPATH.'config/'.ENVIRONMENT);
+					.'is not valid.<br />Please check your configuration at <b>'.APPPATH.'config');
 			}
 
 			$this->cfg = $cfg[$cfg['connection']];
@@ -232,9 +232,9 @@
 			{
 				$this->bind($binds);
 			}
-			
+
 			$this->_custom_query = $string;
-			
+
 			return $this;
 		}
 
