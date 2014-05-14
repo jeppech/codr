@@ -1,0 +1,1087 @@
+# GPS Sporing
+msgid "GPS Sporing"
+msgstr "GPS Tracking"
+
+# Demo
+msgid "Demo"
+msgstr "Demo"
+
+# Køb
+msgid "K&oslash;b"
+msgstr "Buy"
+
+# Support
+msgid "Support"
+msgstr "Support"
+
+# Mit SkyEye
+msgid "Mit SkyEye"
+msgstr "My SkyEye"
+
+# Status for
+msgid "Status for"
+msgstr "Status for"
+
+# Siden opdaterer automatisk til den seneste position
+msgid "Siden opdaterer automatisk til den seneste position"
+msgstr "Siden opdaterer automatisk til den seneste position"
+
+# Din Lommy Blue er indstillet til:
+msgid "Din Lommy Blue er indstillet til:"
+msgstr "Your Lommy Blue is set to:"
+
+# Vælg antal pos.
+msgid "V&aelig;lg antal pos."
+msgstr "Choose no. of pos."
+
+# Log ud
+msgid "Log ud"
+msgstr "Log out"
+
+# Tank op
+msgid "Tank op"
+msgstr "Top up"
+
+# Positions ID
+msgid "Positions ID"
+msgstr "Position ID"
+
+# Kort
+msgid "Kort"
+msgstr "Map"
+
+# Dato
+msgid "Dato"
+msgstr "Date"
+
+# Vælg dato
+msgid "V&aelig;lg dato"
+msgstr "Choose date"
+
+# Vis seneste
+msgid "Vis seneste"
+msgstr "Show latest"
+
+# Nyeste position
+msgid "Nyeste position"
+msgstr "Latest position"
+
+# Bevægelse
+msgid "Bev&aelig;gelse"
+msgstr "Movement"
+
+# Afspil
+msgid "Afspil"
+msgstr "Play"
+
+# Vis
+msgid "Vis"
+msgstr "Show"
+
+# Visning af statusside
+msgid "Visning af statusside"
+msgstr "Statuspage layout"
+
+# Visning
+msgid "Visning"
+msgstr "Layout"
+
+# Stort kort
+msgid "Stort kort"
+msgstr "Large map"
+
+# Nærmeste adresse
+msgid "N&aelig;rmeste adresse"
+msgstr "Nearest address"
+
+# Hastighed:
+msgid "Hastighed:"
+msgstr "Speed:"
+
+# Bevægelsesretning:
+msgid "Bev&aelig;gelsesretning:"
+msgstr "Movement direction:"
+
+# Position:
+msgid "Position:"
+msgstr "Position:"
+
+# Breddegrad:
+msgid "Breddegrad:"
+msgstr "Latitude:"
+
+# Længdegrad:
+msgid "L&aelig;ngdegrad:"
+msgstr "Longitude:"
+
+# Tekniske data
+msgid "Tekniske data"
+msgstr "Technical data"
+
+# GPS-satellitter:
+msgid "GPS-satellitter:"
+msgstr "GPS satellites"
+
+# GSM-forbindelse:
+msgid "GSM-forbindelse:"
+msgstr "GSM connection:"
+
+# Batteri-niveau:
+msgid "Batteri-niveau:"
+msgstr "Battery level:"
+
+# Batteriniveauet på din Lommy Blue er
+msgid "Batteriniveauet p&aring; din Lommy Blue er"
+msgstr "The battery level of your Lommy Blue is"
+
+# Tilslutning
+msgid "Tilslutning"
+msgstr "Connections"
+
+# Strømtilslutning:
+msgid "Str&oslash;mtilslutning:"
+msgstr "Powersource:"
+
+# Tænding:
+msgid "T&aelig;nding:"
+msgstr "Ignition:"
+
+# GeoFence:
+msgid "GeoFence:"
+msgstr "GeoFence:"
+
+# Indgang:
+msgid "Indgang:"
+msgstr "Input:"
+
+# Udgang:
+msgid "Udgang:"
+msgstr "Output:"
+
+# Tilføjelser
+msgid "Tilf&oslash;jelser"
+msgstr "Add-ons"
+
+# Status
+msgid "Status"
+msgstr "Status"
+
+# Historik
+msgid "Historik"
+msgstr "History"
+
+# Forbrug
+msgid "Forbrug"
+msgstr "Consumption"
+
+# Brugerdata
+msgid "Brugerdata"
+msgstr "Userdata"
+
+# Besked-service
+msgid "Besked-service"
+msgstr "Message service"
+
+# Mit
+msgid "Mit"
+msgstr "My"
+
+# Kaldenavn for din Lommy Blue
+msgid "Kaldenavn for din Lommy Blue"
+msgstr "Nickname for your Lommy Blue"
+
+# Saldo:
+msgid "Saldo: "
+msgstr "Balance:"
+
+# Historik for
+msgid "Historik for"
+msgstr "History for"
+
+# Positionsoversigt
+msgid "Positionsoversigt"
+msgstr "Position overview"
+
+# Tidspunkt
+msgid "Tidspunkt"
+msgstr "Time"
+
+# Position
+msgid "Position"
+msgstr "Position"
+
+# Retning
+msgid "Retning"
+msgstr "Direction"
+
+# Hastighed
+msgid "Hastighed"
+msgstr "Speed"
+
+# Satellitter
+msgid "Satellitter"
+msgstr "Satellites"
+
+# Unitstate
+msgid "Unitstate"
+msgstr "Unitstate"
+
+# Saldo:
+msgid "Saldo:"
+msgstr "Balance:"
+
+# Din Lommy Blue<br />bevæger sig i<br />retningen<br /><br />
+msgid "Din Lommy Blue&lt;br /&gt;bev&aelig;ger sig i&lt;br /&gt;retningen&lt;br /&gt;&lt;br /&gt;"
+msgstr "Your Lommy Blue&lt;br/&gt;is moving in&lt;br/&gt;the direction&lt;br/&gt;&lt;br/&gt;"
+
+# Forbrug for
+msgid "Forbrug for"
+msgstr "Consumption for"
+
+# Forbrugsoversigt
+msgid "Forbrugsoversigt"
+msgstr "Consumption overview"
+
+# Start dato
+msgid "Start dato"
+msgstr "Start dato"
+
+# Slut dato
+msgid "Slut dato"
+msgstr "Slut dato"
+
+# Fakturaer
+msgid "Fakturaer"
+msgstr "Invoices"
+
+# Brugerdata for
+msgid "Brugerdata for"
+msgstr "Userdata for"
+
+# Her kan du ændrer dine personlige data.
+msgid "Her kan du &aelig;ndrer dine personlige data."
+msgstr "On this page you can change your personal data."
+
+# Personlig information
+msgid "Personlig information"
+msgstr "Personal information"
+
+# (fx. "John's Golf GTI")
+msgid "(fx. &quot;John&#039;s Golf GTI&quot;)"
+msgstr "(eg. &quot;John&#039;s Golf GTI&quot;)"
+
+# Fornavn:
+msgid "Fornavn:"
+msgstr "Firstname"
+
+# Efternavn:
+msgid "Efternavn:"
+msgstr "Surname:"
+
+# Adresse
+msgid "Adresse"
+msgstr "Address"
+
+# Postnr. og by:
+msgid "Postnr. og by:"
+msgstr "Zip. and city:"
+
+# C/O adresse
+msgid "C/O adresse"
+msgstr "C/O adresse"
+
+# Mobiltelefon:
+msgid "Mobiltelefon:"
+msgstr "Mobile no.:"
+
+# Fastnet telefon:
+msgid "Fastnet telefon:"
+msgstr "Landline no.:"
+
+# E-mail adresse:
+msgid "E-mail adresse:"
+msgstr "E-mail address:"
+
+# Gentag e-mail adresse:
+msgid "Gentag e-mail adresse:"
+msgstr "Gentag e-mail adresse:"
+
+# Sprog
+msgid "Sprog"
+msgstr "Language:"
+
+# Dansk
+msgid "Dansk"
+msgstr "Danish"
+
+# Engelsk (UK)
+msgid "Engelsk (UK)"
+msgstr "English (UK)"
+
+# Nyhedsbrev
+msgid "Nyhedsbrev"
+msgstr "Newsletter:"
+
+# Ja, jeg vil gerne modtage nyheder, informationer og specielle tilbud fra SkyEye. (ca. 6-12 gange om året)
+msgid "Ja, jeg vil gerne modtage nyheder, informationer og specielle tilbud fra SkyEye. (ca. 6-12 gange om &aring;ret)"
+msgstr "Yes, I would like to receive news, informations and special offers from SkyEye (Approx. 6-12 times per year)"
+
+# Ja, jeg vil have hastigheden vist som mph.
+msgid "Ja, jeg vil have hastigheden vist som mph."
+msgstr "Show speed as mph"
+
+# Betingelser
+msgid "Betingelser"
+msgstr "Conditions:"
+
+# Ja, jeg har læst og forstået betingelserne. (<a href="http://devel2.skyeye.eu/buy/terms-and-conditions">Læs betingelser her</a>)
+msgid "Ja, jeg har l&aelig;st og forst&aring;et betingelserne. (&lt;a href=&quot;http://devel2.skyeye.eu/buy/terms-and-conditions&quot;&gt;L&aelig;s betingelser her&lt;/a&gt;)"
+msgstr "I have read and understood the conditions. (&lt;a href=&quot;http://devel2.skyeye.eu/buy/terms-and-conditions&quot;&gt;Read conditions here&lt;/a&gt;)"
+
+# Skal udfyldes.
+msgid "Skal udfyldes."
+msgstr "Must be filled"
+
+# Enten mobiltelefon eller e-mail skal udfyldes.
+msgid "Enten mobiltelefon eller e-mail skal udfyldes."
+msgstr "Either mobile number or E-mail must be filled."
+
+# Opdatér informationer
+msgid "Opdat&eacute;r informationer"
+msgstr "Update informations"
+
+# Brugernavn
+msgid "Brugernavn"
+msgstr "Username"
+
+# Det er valgfrit om du vil skifte dit brugernavn.
+msgid "Det er valgfrit om du vil skifte dit brugernavn."
+msgstr "It is optional if you want to change your username."
+
+# Nuværende brugernavn
+msgid "Nuv&aelig;rende brugernavn"
+msgstr "Current username"
+
+# Nyt brugernavn
+msgid "Nyt brugernavn"
+msgstr "New username"
+
+# Gentag nyt brugernavn
+msgid "Gentag nyt brugernavn"
+msgstr "Repeat username"
+
+# Skift brugernavn
+msgid "Skift brugernavn"
+msgstr "Change username"
+
+# Ryd felter
+msgid "Ryd felter"
+msgstr "Clear"
+
+# Kodeord
+msgid "Kodeord"
+msgstr "Password"
+
+# Vi anbefaler, at du skifter det kodeord du har modtaget fra SkyEye, til et mere personligt kodeord, som kun du kender.
+msgid "Vi anbefaler, at du skifter det kodeord du har modtaget fra SkyEye, til et mere personligt kodeord, som kun du kender."
+msgstr "We recommend, to change your password that you&#039;ve received from SkyEye, to a more personal password, that only you know."
+
+# Nuværende kodeord
+msgid "Nuv&aelig;rende kodeord"
+msgstr "Current password"
+
+# Nyt kodeord
+msgid "Nyt kodeord"
+msgstr "New password"
+
+# Gentag kodeord
+msgid "Gentag kodeord"
+msgstr "Repeat password"
+
+# Skift kodeord
+msgid "Skift kodeord"
+msgstr "Change password"
+
+# Lommy Blue Serienummer
+msgid "Lommy Blue Serienummer"
+msgstr "Lommy Blue serial number"
+
+# Din enheds serienummer
+msgid "Din enheds serienummer"
+msgstr "Your unit&#039;s serial number:"
+
+# Besked-service for
+msgid "Besked-service for"
+msgstr "Message service for"
+
+# Rediger alarm modtagere
+msgid "Rediger alarm modtagere"
+msgstr "Edit alarm receivers"
+
+# Vælg modtager
+msgid "V&aelig;lg modtager"
+msgstr "V&aelig;lg modtager"
+
+# Navn:
+msgid "Navn:"
+msgstr "Name:"
+
+# SMS Sporing
+msgid "SMS Sporing"
+msgstr "SMS Tracking"
+
+# Aktiver bruger
+msgid "Aktiver bruger"
+msgstr "Activate user"
+
+# Denne bruger er aktiveret og vil modtage de valgte SMS og e-mail alarmer.
+msgid "Denne bruger er aktiveret og vil modtage de valgte SMS og e-mail alarmer."
+msgstr "This user is activated, and will receiver the choosen SMS and E-mail alams."
+
+# SMS pris
+msgid "SMS pris"
+msgstr "SMS price"
+
+# Ja, jeg acceptere, at der trækkes @smsprice fra min saldo per SMS, der udsendes.
+msgid "Ja, jeg acceptere, at der tr&aelig;kkes @smsprice fra min saldo per SMS, der udsendes."
+msgstr "Yes, I accept, that @smsprice is withdrawn from my balance, for every SMS sent."
+
+# SMS
+msgid "SMS"
+msgstr "SMS"
+
+# E-mail
+msgid "E-mail"
+msgstr "E-mail"
+
+# Funktion
+msgid "Funktion"
+msgstr "Function"
+
+# Strømforsyning afbrudt
+msgid "Str&oslash;mforsyning afbrudt"
+msgstr "Powersource disconnected"
+
+# Lavt batteri-niveau
+msgid "Lavt batteri-niveau"
+msgstr "Low battery"
+
+# Ikke forbundet i 14 dage
+msgid "Ikke forbundet i 14 dage"
+msgstr "Not connected for 14 days"
+
+# Lav saldo
+msgid "Lav saldo"
+msgstr "Low balance"
+
+# Tom saldo
+msgid "Tom saldo"
+msgstr "Balance empty"
+
+# Hastigheds-grænse
+msgid "Hastigheds-gr&aelig;nse"
+msgstr "Speeding"
+
+# Tænding aktiv
+msgid "T&aelig;nding aktiv"
+msgstr "Ignition active"
+
+# Spænding på indgangen
+msgid "Sp&aelig;nding p&aring; indgangen"
+msgstr "Input is active"
+
+# grå ledning
+msgid "gr&aring; ledning"
+msgstr "grey wire"
+
+# GeoFence
+msgid "GeoFence"
+msgstr "GeoFence"
+
+# Opdatér alarm modtager
+msgid "Opdat&eacute;r alarm modtager"
+msgstr "Update alarm receiver"
+
+# Slet alarm modtager
+msgid "Slet alarm modtager"
+msgstr "Delete alarm receiver"
+
+# Tilføj alarm modtager
+msgid "Tilf&oslash;j alarm modtager"
+msgstr "Add alarm receiver"
+
+# Indstillinger
+msgid "Indstillinger"
+msgstr "Settings"
+
+# Indstillinger for modtagere
+msgid "Indstillinger for modtagere"
+msgstr "Settings for receivers"
+
+# De indstillinger du vælger gælder for alle alarm modtagere, hvor du tilmelder en alarm-funktion.
+msgid "De indstillinger du v&aelig;lger g&aelig;lder for alle alarm modtagere, hvor du tilmelder en alarm-funktion."
+msgstr "The settings that you change, are applied to all alarm receivers."
+
+# Lav-saldo alarm
+msgid "Lav-saldo alarm"
+msgstr "Low balance alarm"
+
+# Vælg ved hvilket saldo-niveau, der skal sendes alarm-besked.
+msgid "V&aelig;lg ved hvilket saldo-niveau, der skal sendes alarm-besked."
+msgstr "Choose at which balance level you&#039;ll receive an alarm message."
+
+# Hastigheds-alarm
+msgid "Hastigheds-alarm"
+msgstr "Speeding alarm"
+
+# Vælg den hastigheds-grænse, der skal gælde for alarmen.
+msgid "V&aelig;lg den hastigheds-gr&aelig;nse, der skal g&aelig;lde for alarmen."
+msgstr "Choose the speeding limit, for the speeding alarm."
+
+# GeoFence radius
+msgid "GeoFence radius"
+msgstr "GeoFence radius"
+
+# Når der ikke længere er tændingssignal, sættes der en cirkelformet zone udenom enheden. <br />Hvis enheden forlader denne zone, kan den sende en alarm. Her kan du sætte en radius på zonen
+msgid "N&aring;r der ikke l&aelig;ngere er t&aelig;ndingssignal, s&aelig;ttes der en cirkelformet zone udenom enheden. &lt;br /&gt;Hvis enheden forlader denne zone, kan den sende en alarm. Her kan du s&aelig;tte en radius p&aring; zonen"
+msgstr "When the ignition is off, a circular zone is set around the unit.&lt;br /&gt; If the unit leaves this zone, it can send an alarm.&lt;br /&gt; Set the radius of the zone here."
+
+# Gem indstillinger
+msgid "Gem indstillinger"
+msgstr "Save settings"
+
+# Tank op for
+msgid "Tank op for"
+msgstr "Top up for"
+
+# Indbetaling med kreditkort
+msgid "Indbetaling med kreditkort"
+msgstr "Payment by credit card"
+
+# Indtast det beløb, du ønsker at indsætte på din SkyEye-saldo. Når du klikker på "Gå til indbetaling", åbnes et nyt vindue med en sikret betalingsside. Efter gennemført betaling, bliver din saldo straks opdateret. <br /><br /> Indbetaling sker til SkyEyes moderfirma:
+msgid "Indtast det bel&oslash;b, du &oslash;nsker at inds&aelig;tte p&aring; din SkyEye-saldo. N&aring;r du klikker p&aring; &quot;G&aring; til indbetaling&quot;, &aring;bnes et nyt vindue med en sikret betalingsside. Efter gennemf&oslash;rt betaling, bliver din saldo straks opdateret. &lt;br /&gt;&lt;br /&gt; Indbetaling sker til SkyEyes moderfirma:"
+msgstr "Enter the amount you wish to deposit into your SkyEye account.[BR]When you click on &quot;Go to payment&quot;, a new window opens with a secure payment page. After a successful payment, your SkyEye account is immediately updated.[BR][BR]The payment is made to SkyEyes parent company:"
+
+# Beløb
+msgid "Bel&oslash;b"
+msgstr "Amount"
+
+# Min. indbetaling er
+msgid "Min. indbetaling er"
+msgstr "Min. deposit is"
+
+# Maks. indbetaling er
+msgid "Maks. indbetaling er"
+msgstr "Max. deposit is"
+
+# Gå til betaling
+msgid "G&aring; til betaling"
+msgstr "Go to payment"
+
+# Ingen positioner for den valgte dato
+msgid "Ingen positioner for den valgte dato"
+msgstr "No positions for the selected date"
+
+# <b>LIVE:</b> Opdaterer automatisk
+msgid "&lt;b&gt;LIVE:&lt;/b&gt; Opdaterer automatisk"
+msgstr "&lt;b&gt;LIVE:&lt;/b&gt; Updating automatically"
+
+# Den seneste position er fra <b>@date</b>
+msgid "Den seneste position er fra &lt;b&gt;@date&lt;/b&gt;"
+msgstr "The latest position is from&lt;br &gt;&lt;/span&gt;&lt;/span&gt; &lt;b&gt;@date&lt;/b&gt;"
+
+# Afspiller bevægelse for <b>@date</b>
+msgid "Afspiller bev&aelig;gelse for &lt;b&gt;@date&lt;/b&gt;"
+msgstr "Afspiller bev&aelig;gelse for &lt;b&gt;@date&lt;/b&gt;"
+
+# Vælg time
+msgid "V&aelig;lg time"
+msgstr "Choose hour"
+
+# Intet signal
+msgid "Intet signal"
+msgstr "Intet signal"
+
+# Lav
+msgid "Lav"
+msgstr "Low"
+
+# Lav/medium
+msgid "Lav/medium"
+msgstr "Low/medium"
+
+# Medium
+msgid "Medium"
+msgstr "Medium"
+
+# Medium/høj
+msgid "Medium/h&oslash;j"
+msgstr "Medium/high"
+
+# Høj
+msgid "H&oslash;j"
+msgstr "High"
+
+# Ingen lader tilsluttet
+msgid "Ingen lader tilsluttet"
+msgstr "No charger connected"
+
+# Lader tilsluttet, men lader ikke
+msgid "Lader tilsluttet, men lader ikke"
+msgstr "Lader tilsluttet, men lader ikke"
+
+# Din Lommy Blue oplader
+msgid "Din Lommy Blue oplader"
+msgstr "Din Lommy Blue oplader"
+
+# Din Lommy Blue er tilsluttet en strømkilde
+msgid "Din Lommy Blue er tilsluttet en str&oslash;mkilde"
+msgstr "Your Lommy Blue is connected to a powersource"
+
+# Lav spænding!
+msgid "Lav sp&aelig;nding!"
+msgstr "Lav sp&aelig;nding!"
+
+# Inaktiv
+msgid "Inaktiv"
+msgstr "Inactive"
+
+# Aktiv
+msgid "Aktiv"
+msgstr "Active"
+
+# Ej tilkøbt
+msgid "Ej tilk&oslash;bt"
+msgstr "Ej tilk&oslash;bt"
+
+# Aktiv, køretøjet er indenfor zonen (@gfradiusm)
+msgid "Aktiv, k&oslash;ret&oslash;jet er indenfor zonen (@gfradiusm)"
+msgstr "Active, the vehicle is inside the zone (@gfradiusm)"
+
+# Aktiv, køretøjet er udenfor zonen! (@gfradiusm)
+msgid "Aktiv, k&oslash;ret&oslash;jet er udenfor zonen! (@gfradiusm)"
+msgstr "Active, vehicle outside of zone! (@gfradiusm)"
+
+# Køretøjet er tændt
+msgid "K&oslash;ret&oslash;jet er t&aelig;ndt"
+msgstr "K&oslash;ret&oslash;jet er t&aelig;ndt"
+
+# Køretøjet er ikke tændt
+msgid "K&oslash;ret&oslash;jet er ikke t&aelig;ndt"
+msgstr "The vehicle is off"
+
+# N-NØ
+msgid "N-N&Oslash;"
+msgstr "N-NE"
+
+# NØ
+msgid "N&Oslash;"
+msgstr "NE"
+
+# Ø-NØ
+msgid "&Oslash;-N&Oslash;"
+msgstr "E-NE"
+
+# Ø
+msgid "&Oslash;"
+msgstr "&Oslash;"
+
+# Ø-SØ
+msgid "&Oslash;-S&Oslash;"
+msgstr "&Oslash;-S&Oslash;"
+
+# SØ
+msgid "S&Oslash;"
+msgstr "S&Oslash;"
+
+# S-SØ
+msgid "S-S&Oslash;"
+msgstr "S-SE"
+
+# S-SV
+msgid "S-SV"
+msgstr "S-SW"
+
+# SV
+msgid "SV"
+msgstr "SV"
+
+# V-SV
+msgid "V-SV"
+msgstr "V-SV"
+
+# V
+msgid "V"
+msgstr "V"
+
+# V-NV
+msgid "V-NV"
+msgstr "V-NV"
+
+# NV
+msgid "NV"
+msgstr "NV"
+
+# N-NV
+msgid "N-NV"
+msgstr "N-NW"
+
+# Kunne ikke lokaliserer adresse
+msgid "Kunne ikke lokaliserer adresse"
+msgstr "Kunne ikke lokaliserer adresse"
+
+# Ingen adresse fundet
+msgid "Ingen adresse fundet"
+msgstr "Ingen adresse fundet"
+
+# Vis på kort
+msgid "Vis p&aring; kort"
+msgstr "Show on map"
+
+# Viser positioner for <b>@date</b>
+msgid "Viser positioner for &lt;b&gt;@date&lt;/b&gt;"
+msgstr "Showing positions for &lt;b&gt;@date&lt;/b&gt;"
+
+# Der er ingen data for <b>@date</b>
+msgid "Der er ingen data for &lt;b&gt;@date&lt;/b&gt;"
+msgstr "There is no data for &lt;br /&gt;&lt;b&gt;@date&lt;/b&gt;"
+
+# Slut datoen skal være større end start datoen
+msgid "Slut datoen skal v&aelig;re st&oslash;rre end start datoen"
+msgstr "Slut datoen skal v&aelig;re st&oslash;rre end start datoen"
+
+# Du kan maks. få vist 3 måneder af gangen.
+msgid "Du kan maks. f&aring; vist 3 m&aring;neder af gangen."
+msgstr "Du kan maks. f&aring; vist 3 m&aring;neder af gangen."
+
+# Viser forbrug fra <b>@startdate</b> &raquo; <b>@enddate</b>
+msgid "Viser forbrug fra &lt;b&gt;@startdate&lt;/b&gt; &amp;raquo; &lt;b&gt;@enddate&lt;/b&gt;"
+msgstr "Viser forbrug fra &lt;b&gt;@startdate&lt;/b&gt; &amp;raquo; &lt;b&gt;@enddate&lt;/b&gt;"
+
+# Oplader frakoblet
+msgid "Oplader frakoblet"
+msgstr "Oplader frakoblet"
+
+# Oplader tilsluttet
+msgid "Oplader tilsluttet"
+msgstr "Oplader tilsluttet"
+
+# Batteriniveau lav
+msgid "Batteriniveau lav"
+msgstr "Batteriniveau lav"
+
+# Ingen data i 14 dage
+msgid "Ingen data i 14 dage"
+msgstr "Ingen data i 14 dage"
+
+# Månedligt gebyr
+msgid "M&aring;nedligt gebyr"
+msgstr "M&aring;nedligt gebyr"
+
+# Hastighedsgrænse overskredet
+msgid "Hastighedsgr&aelig;nse overskredet"
+msgstr "Hastighedsgr&aelig;nse overskredet"
+
+# 1 pos/timen anmodet
+msgid "1 pos/timen anmodet"
+msgstr "1 pos/timen anmodet"
+
+# 6 pos/timen anmodet
+msgid "6 pos/timen anmodet"
+msgstr "6 pos/timen anmodet"
+
+# 15 pos/timen anmodet
+msgid "15 pos/timen anmodet"
+msgstr "15 pos/timen anmodet"
+
+# 1 position/timen
+msgid "1 position/timen"
+msgstr "1 position/hour"
+
+# 6 positioner/timen
+msgid "6 positioner/timen"
+msgstr "6 positions/hour"
+
+# 15 positioner/timen
+msgid "15 positioner/timen"
+msgstr "15 positions/hour"
+
+# IO Port
+msgid "IO Port"
+msgstr "IO Port"
+
+# Batteri-spare-funktion
+msgid "Batteri-spare-funktion"
+msgstr "Battery-saver-function"
+
+# Automatik (1 pos. / 60 pos. i timen)
+msgid "Automatik (1 pos. / 60 pos. i timen)"
+msgstr "Automatic (1 pos. / 60 pos. hour)"
+
+# Enhed udenfor GeoFence zone
+msgid "Enhed udenfor GeoFence zone"
+msgstr "Unit outside of GeoFence zone"
+
+# Enhed indenfor GeoFence zone igen
+msgid "Enhed indenfor GeoFence zone igen"
+msgstr "Enhed indenfor GeoFence zone igen"
+
+# Tænding på
+msgid "T&aelig;nding p&aring;"
+msgstr "Ignition on"
+
+# Tænding fra
+msgid "T&aelig;nding fra"
+msgstr "Ignition off"
+
+# Beskrivelse [Antal hændelser]
+msgid "Beskrivelse [Antal h&aelig;ndelser]"
+msgstr "Description [No. of events]"
+
+# Samlet beløb
+msgid "Samlet bel&oslash;b"
+msgstr "Total amount"
+
+# Der er ingen hændelser i den valgte periode
+msgid "Der er ingen h&aelig;ndelser i den valgte periode"
+msgstr "Der er ingen h&aelig;ndelser i den valgte periode"
+
+# Samlet forbrug i den valgte periode: <b>@sum</b>
+msgid "Samlet forbrug i den valgte periode: &lt;b&gt;@sum&lt;/b&gt;"
+msgstr "Total amount for the selected period: &lt;b&gt;@sum&lt;/b&gt;"
+
+# Hent faktura
+msgid "Hent faktura"
+msgstr "Download invoice"
+
+# Der er ingen fakturarer for den valgte periode.
+msgid "Der er ingen fakturarer for den valgte periode."
+msgstr "Der er ingen fakturarer for den valgte periode."
+
+# SMS til @recipient
+msgid "SMS til @recipient"
+msgstr "SMS to @recipient"
+
+# abonnement stoppet
+msgid "abonnement stoppet"
+msgstr "subscription stopped"
+
+# abonnement startet
+msgid "abonnement startet"
+msgstr "subscription started"
+
+# Dine personlige oplysninger er blevet opdateret
+msgid "Dine personlige oplysninger er blevet opdateret"
+msgstr "Your personal informations have been updated"
+
+# Her kan du ændre dine personlige indstillinger
+msgid "Her kan du &aelig;ndre dine personlige indstillinger"
+msgstr "Her kan du &aelig;ndre dine personlige indstillinger"
+
+# Dit kodeord er blevet ændret.
+msgid "Dit kodeord er blevet &aelig;ndret."
+msgstr "Dit kodeord er blevet &aelig;ndret."
+
+# Dit brugernavn er blevet ændret til <b>@username</b>.
+msgid "Dit brugernavn er blevet &aelig;ndret til &lt;b&gt;@username&lt;/b&gt;."
+msgstr "Dit brugernavn er blevet &aelig;ndret til &lt;b&gt;@username&lt;/b&gt;."
+
+# Du skal acceptere betingelserne for SMS beskeder.
+msgid "Du skal acceptere betingelserne for SMS beskeder."
+msgstr "You have to accept the conditions for SMS messages."
+
+# Alarmmodtageren blev ikke oprettet, prøv igen.
+msgid "Alarmmodtageren blev ikke oprettet, pr&oslash;v igen."
+msgstr "Alarmmodtageren blev ikke oprettet, pr&oslash;v igen."
+
+# Alarmmodtageren blev oprettet, genindlæser siden...
+msgid "Alarmmodtageren blev oprettet, genindl&aelig;ser siden..."
+msgstr "Alarmmodtageren blev oprettet, genindl&aelig;ser siden..."
+
+# Enten navn, mobil tlf., eller E-mail skal være udfyldt.
+msgid "Enten navn, mobil tlf., eller E-mail skal v&aelig;re udfyldt."
+msgstr "Enten navn, mobil tlf., eller E-mail skal v&aelig;re udfyldt."
+
+# Alarmmodtageren blev ikke opdateret.
+msgid "Alarmmodtageren blev ikke opdateret."
+msgstr "Alarmmodtageren blev ikke opdateret."
+
+# Alarmmodtageren blev opdateret, genindlæser siden...
+msgid "Alarmmodtageren blev opdateret, genindl&aelig;ser siden..."
+msgstr "Alarmmodtageren blev opdateret, genindl&aelig;ser siden..."
+
+# Er du sikker på at du vil slette alarmbrugeren: @alarmuser
+msgid "Er du sikker p&aring; at du vil slette alarmbrugeren: @alarmuser"
+msgstr "Do you really want to delete the alarmuser: @alarmuser"
+
+# Afventer fuldførsel af betaling...
+msgid "Afventer fuldf&oslash;rsel af betaling..."
+msgstr "Awaiting completion of payment..."
+
+# Du skal indtaste et beløb
+msgid "Du skal indtaste et bel&oslash;b"
+msgstr "You must enter an amount"
+
+# Betalingen blev afbrudt
+msgid "Betalingen blev afbrudt"
+msgstr "Payment cancelled"
+
+# Betaling afbrudt
+msgid "Betaling afbrudt"
+msgstr "Betaling afbrudt"
+
+# Hvis du mener dette er en fejl, prøv da venligst igen, eller kontakt vores support
+msgid "Hvis du mener dette er en fejl, pr&oslash;v da venligst igen, eller kontakt vores support"
+msgstr "If you believe this is an error, please try again, or contact the support department."
+
+# Betalingen er gennemført
+msgid "Betalingen er gennemf&oslash;rt"
+msgstr "The payment is completed"
+
+# Du kan hente en faktura for indbetalingen <a href='/skyeye/consumption'>her</a>.
+msgid "Du kan hente en faktura for indbetalingen &lt;a href=&#039;/skyeye/consumption&#039;&gt;her&lt;/a&gt;."
+msgstr "You can download a invoice for the deposit &lt;a href=&#039;/skyeye/consumption&#039;&gt;here&lt;/a&gt;."
+
+# N
+msgid "N"
+msgstr "N"
+
+# Dit kodeord er blevet ændret
+msgid "Dit kodeord er blevet &aelig;ndret"
+msgstr "Dit kodeord er blevet &aelig;ndret"
+
+# Viser en tidligere position
+msgid "Viser en tidligere position"
+msgstr "Showing an earlier position"
+
+# S
+msgid "S"
+msgstr "S"
+
+# sattelitter har forbindelse med din Lommy Blue2
+msgid "sattelitter har forbindelse med din Lommy Blue2"
+msgstr "sattelitter har forbindelse med din Lommy Blue2"
+
+# sattelitter har forbindelse med din Lommy Blue
+msgid "sattelitter har forbindelse med din Lommy Blue"
+msgstr "satellites are connected to your Lommy Blue"
+
+# Viser forbrug fra <b>@startdate</b> » <b>@enddate</b>
+msgid "Viser forbrug fra &lt;b&gt;@startdate&lt;/b&gt; &raquo; &lt;b&gt;@enddate&lt;/b&gt;"
+msgstr "Consumption for &lt;br /&gt;&lt;b&gt;@startdate&lt;/b&gt; &raquo; &lt;b&gt;@enddate&lt;/b&gt;"
+
+# Her kan du ændrer dine personlige indstillinger
+msgid "Her kan du &aelig;ndrer dine personlige indstillinger"
+msgstr "On this page you can change your personal data"
+
+# 1 position i timen
+msgid "1 position i timen"
+msgstr "1 position/hour"
+
+# 6 positioner i timen
+msgid "6 positioner i timen"
+msgstr "6 positions/hour"
+
+# 15 positioner i timen
+msgid "15 positioner i timen"
+msgstr "15 positions/hour"
+
+# Automatisk, 1 position / 60 positioner i timen
+msgid "Automatisk, 1 position / 60 positioner i timen"
+msgstr "Automatic, 1 position / 60 positions per hour"
+
+# Batteri-spare-funktion, 3 positioner i timen
+msgid "Batteri-spare-funktion, 3 positioner i timen"
+msgstr "Battery-saver-function, 3 positions/hour"
+
+# Din%20Lommy%20Blue%20er%20indstillet%20til%3A
+msgid "Din%20Lommy%20Blue%20er%20indstillet%20til%3A"
+msgstr "Your%20Lommy%20Blue%20is%20set%20to%3A%0A"
+
+# Afsendelse af positionsdata fra Lommy Blue
+msgid "Afsendelse af positionsdata fra Lommy Blue"
+msgstr "Afsendelse af positionsdata fra Lommy Blue"
+
+# Du skal acceptere betingelserne
+msgid "Du skal acceptere betingelserne"
+msgstr "Du skal acceptere betingelserne"
+
+# Sendingsintervallet blev ændret
+msgid "Sendingsintervallet blev &aelig;ndret"
+msgstr "Sendingsintervallet blev &aelig;ndret"
+
+# Information
+msgid "Information"
+msgstr "Information"
+
+# Sendingsinterval
+msgid "Sendingsinterval"
+msgstr "Sendingsinterval"
+
+# Vælg hvor ofte og hvordan din Lommy Blue GPS-enhed skal sende sine data til dit kontrolpanel.
+msgid "V&aelig;lg hvor ofte og hvordan din Lommy Blue GPS-enhed skal sende sine data til dit kontrolpanel."
+msgstr "V&aelig;lg hvor ofte og hvordan din Lommy Blue GPS-enhed skal sende sine data til dit kontrolpanel."
+
+# @price pr. dag
+msgid "@price pr. dag"
+msgstr "@price pr. dag"
+
+# 15 position i timen
+msgid "15 position i timen"
+msgstr "15 positions/hour"
+
+# <b>Automatik</b> (60 pos. / 1 pos. i timen)
+msgid "&lt;b&gt;Automatik&lt;/b&gt; (60 pos. / 1 pos. i timen)"
+msgstr "&lt;b&gt;Automatic&lt;/b&gt; (60 pos. / 1 pos. hour)"
+
+# <b>Batteri-spare-funktion</b> (3 pos. i timen)
+msgid "&lt;b&gt;Batteri-spare-funktion&lt;/b&gt; (3 pos. i timen)"
+msgstr "&lt;b&gt;Battery-saver-function&lt;/b&gt; (3 pos/hour)"
+
+# Ja, jeg acceptere, at mit valg bestemmer den daglige ydelse, der trækkes fra min SkyEye-saldo.
+msgid "Ja, jeg acceptere, at mit valg bestemmer den daglige ydelse, der tr&aelig;kkes fra min SkyEye-saldo."
+msgstr "Ja, jeg acceptere, at mit valg bestemmer den daglige ydelse, der tr&aelig;kkes fra min SkyEye-saldo."
+
+# Opdater sendingsinterval
+msgid "Opdater sendingsinterval"
+msgstr "Opdater sendingsinterval"
+
+# Annuller
+msgid "Annuller"
+msgstr "Annuller"
+
+# Information omkring sendingsinterval
+msgid "Information omkring sendingsinterval"
+msgstr "Information omkring sendingsinterval"
+
+# 1, 6 eller 15 positioner i timen
+msgid "1, 6 eller 15 positioner i timen"
+msgstr "1, 6 eller 15 positioner i timen"
+
+# <b>Takst:</b> @pos1_price / @pos6_price / @pos15_price pr. dag
+msgid "&lt;b&gt;Takst:&lt;/b&gt; @pos1_price / @pos6_price / @pos15_price pr. dag"
+msgstr "&lt;b&gt;Takst:&lt;/b&gt; @pos1_price / @pos6_price / @pos15_price pr. dag"
+
+# Automatik <span style="font-weight: normal;">(60 pos. / 1 pos i timen)</span>
+msgid "Automatik &lt;span style=&quot;font-weight: normal;&quot;&gt;(60 pos. / 1 pos i timen)&lt;/span&gt;"
+msgstr "Automatik &lt;span style=&quot;font-weight: normal;&quot;&gt;(60 pos. / 1 pos i timen)&lt;/span&gt;"
+
+# <b>Takst:</b> @price pr. dag uanset køretøjets aktivitet
+msgid "&lt;b&gt;Takst:&lt;/b&gt; @price pr. dag uanset k&oslash;ret&oslash;jets aktivitet"
+msgstr "&lt;b&gt;Takst:&lt;/b&gt; @price pr. dag uanset k&oslash;ret&oslash;jets aktivitet"
+
+# POS_AUTO_TEXT
+msgid "POS_AUTO_TEXT"
+msgstr "POS_AUTO_TEXT"
+
+# Batteri-spare-funktion <span style="font-weight: normal;">(3 pos. i timen)</span>
+msgid "Batteri-spare-funktion &lt;span style=&quot;font-weight: normal;&quot;&gt;(3 pos. i timen)&lt;/span&gt;"
+msgstr "Batteri-spare-funktion &lt;span style=&quot;font-weight: normal;&quot;&gt;(3 pos. i timen)&lt;/span&gt;"
+
+# <b>Takst:</b> @price pr. dag
+msgid "&lt;b&gt;Takst:&lt;/b&gt; @price pr. dag"
+msgstr "&lt;b&gt;Takst:&lt;/b&gt; @price pr. dag"
+
+# POS_BAT_SAVER_TEXT
+msgid "POS_BAT_SAVER_TEXT"
+msgstr "POS_BAT_SAVER_TEXT"
