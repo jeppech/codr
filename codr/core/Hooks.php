@@ -8,27 +8,23 @@
 
 		function __construct()
 		{
-			log_message('debug','Hooks class initialized');
+			log_message("debug","Hooks class initialized");
 			$this->_initialize_hooks();
 		}
 
 		private function _initialize_hooks()
 		{
-			$cfg 	=& load_class('Config','core');
+			$cfg 	=& load_class("Config","core");
 			$hooks 	= false;
 
-			if (!$cfg->get_item('enable_hooks'))
+			if (!$cfg->get_item("enable_hooks"))
 			{
 				return;
 			}
 
-			if (defined('ENVIRONMENT') && is_file(APPPATH.'config/'.ENVIRONMENT.'/hooks.php'))
+			if (is_file(APPPATH."config/hooks.php"))
 			{
-				include_once APPPATH.'config/'.ENVIRONMENT.'/hooks.php';
-			}
-			else if (is_file(APPPATH.'config/hooks.php'))
-			{
-				include_once APPPATH.'config/hooks.php';
+				include_once APPPATH."config/hooks.php";
 			}
 
 			if (!isset($hooks) || !is_array($hooks))
@@ -67,11 +63,11 @@
 				return false;
 			}
 
-			if (!isset($hookdata['filename']) || !isset($hookdata['filepath']))
+			if (!isset($hookdata["filename"]) || !isset($hookdata["filepath"]))
 			{
 				return false;
 			}
-			$filepath = APPPATH.$hookdata['filepath'].'/'.$hookdata['filename'];
+			$filepath = APPPATH.$hookdata["filepath"]."/".$hookdata["filename"];
 
 			if (!file_exists($filepath))
 			{
@@ -80,21 +76,21 @@
 
 			$class 		= false;
 			$function 	= false;
-			$params 	= '';
+			$params 	= "";
 
-			if (isset($hookdata['function']))
+			if (isset($hookdata["function"]))
 			{
-				$function = $hookdata['function'];
+				$function = $hookdata["function"];
 			}
 
-			if (isset($hookdata['class']) && $hookdata['class'] != '')
+			if (isset($hookdata["class"]) && $hookdata["class"] != "")
 			{
-				$class = $hookdata['class'];
+				$class = $hookdata["class"];
 			}
 
-			if (isset($hookdata['params']) && is_array($hookdata['params']))
+			if (isset($hookdata["params"]) && is_array($hookdata["params"]))
 			{
-				$params = $hookdata['params'];
+				$params = $hookdata["params"];
 			}
 
 			require_once $filepath;

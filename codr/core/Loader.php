@@ -10,13 +10,13 @@
 		private $_loaded_libraries = array();
 
 		function __construct() {
-			log_message('debug','Loader class initialized');
+			log_message("debug","Loader class initialized");
 
 			$this->_model_paths = array(APPPATH);
 			$this->_library_paths = array(APPPATH,BASEPATH);
 		}
 
-		public function model($model, $name = '', $db = false)
+		public function model($model, $name = "", $db = false)
 		{
 			// Enable multi-loading of models
 			if (is_array($model))
@@ -29,7 +29,7 @@
 
 			$model = strtolower($model);
 
-			if ($name == '')
+			if ($name == "")
 			{
 				$name = $model;
 			}
@@ -43,23 +43,23 @@
 
 			if (isset($codr->$name))
 			{
-				exit('The requested model is already a resource: '.$name);
+				exit("The requested model is already a resource: ".$name);
 			}
 
 
 			foreach ($this->_model_paths as $model_path)
 			{
-				if (!file_exists($model_path.'models/'.ENVIRONMENT.'/'.$model.EXT))
+				if (!file_exists($model_path."models/".$model.EXT))
 				{
 					break;
 				}
 
-				if (!class_exists('CODR_Model'))
+				if (!class_exists("CODR_Model"))
 				{
-					load_class('Model','core');
+					load_class("Model","core");
 				}
 
-				require_once $model_path.'models/'.ENVIRONMENT.'/'.$model.EXT;
+				require_once $model_path."models/".$model.EXT;
 
 				$model = ucfirst($model);
 
@@ -69,10 +69,10 @@
 				return;
 			}
 
-			exit('The requested model does not exist: '.$model);
+			exit("The requested model does not exist: ".$model);
 		}
 
-		public function library($library, $name = '', $prefix = 'LIB_')
+		public function library($library, $name = "", $prefix = "LIB_")
 		{
 			if (is_array($library))
 			{
@@ -84,7 +84,7 @@
 
 			$library = strtolower($library);
 
-			if ($name == '')
+			if ($name == "")
 			{
 				$name = $library;
 			}
@@ -98,19 +98,19 @@
 
 			if (isset($codr->$name))
 			{
-				exit('The requested library is already a loaded resource: '.$library);
+				exit("The requested library is already a loaded resource: ".$library);
 			}
 
 			$library = ucfirst($library);
 
 			foreach ($this->_library_paths as $lib_path)
 			{
-				if (!file_exists($lib_path.'library/'.$library.EXT))
+				if (!file_exists($lib_path."library/".$library.EXT))
 				{
 					continue;
 				}
 
-				$codr->$name =& load_class($library,'library',$prefix);
+				$codr->$name =& load_class($library,"library",$prefix);
 				$this->_loaded_libraries[] = $name;
 			}
 		}
@@ -119,12 +119,12 @@
 		{
 			$codr =& get_instance();
 
-			if (class_exists('CODR_Database'))
+			if (class_exists("CODR_Database"))
 			{
 				return;
 			}
 
-			$codr->db =& load_class('DB','database');
+			$codr->db =& load_class("DB","database");
 		}
 
 	}

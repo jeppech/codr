@@ -13,24 +13,24 @@
 
 		public function __construct()
 		{
-			log_message('debug','Config class initialized');
+			log_message("debug","Config class initialized");
 			$this->config =& load_config();
 
-			if ($this->config['base_url'] == '')
+			if ($this->config["base_url"] == "")
 			{
 				$base_url = false;
 
-				if (isset($_SERVER['HTTP_HOST']))
+				if (isset($_SERVER["HTTP_HOST"]))
 				{
-					$base_url = ((isset($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) !== 'off') ? 'https' : 'http');
-					$base_url .= '://'.$_SERVER['HTTP_HOST'];
-					$base_url .= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
+					$base_url = ((isset($_SERVER["HTTPS"]) && strtolower($_SERVER["HTTPS"]) !== "off") ? "https" : "http");
+					$base_url .= "://".$_SERVER["HTTP_HOST"];
+					$base_url .= str_replace(basename($_SERVER["SCRIPT_NAME"]), "", $_SERVER["SCRIPT_NAME"]);
 				}
 				else
 				{
-					$base_url = 'http://localhost/';
+					$base_url = "http://localhost/";
 				}
-				$this->set_item('base_url',$base_url);
+				$this->set_item("base_url",$base_url);
 			}
 		}
 
@@ -38,16 +38,16 @@
 		{
 			if (empty($file))
 			{
-				show_error('Load config','No config file was assigned');
+				show_error("Load config","No config file was assigned");
 			}
 
-			$file 	= str_replace('.php', '', $file);
+			$file 	= str_replace(".php", "", $file);
 			$loaded = false;
 
 			$check_location = array(APPPATH);
 
 			foreach ($check_location as $location) {
-				$file_path = $location.'config/'.ENVIRONMENT.'/'.$file.'.php';
+				$file_path = $location."config/".$file.EXT;
 
 				if (in_array($file_path, $this->_cfg_loaded))
 				{
@@ -55,14 +55,14 @@
 				}
 				if (!file_exists($file_path))
 				{
-					show_error('Load config','The requested config file, does not exist');
+					show_error("Load config","The requested config file, does not exist");
 				}
 
 				include $file_path;
 
 				if (!isset($config) || !is_array($config))
 				{
-					show_error('Load config','The requested config file, is not valid.');
+					show_error("Load config","The requested config file, is not valid.");
 				}
 
 				return $this->config[$file] =& $config;
@@ -71,7 +71,7 @@
 
 		/**
 		 * Assign a value to an item in the config array.
-		 * 
+		 *
 		 * @param string $item  Config item
 		 * @param string $value Config value
 		 */
@@ -82,16 +82,16 @@
 
 		/**
 		 * Fetch a config item from the config array.
-		 * 
+		 *
 		 * @param  string $item  Config item
 		 * @param  string $index Optional index, for multidimensional arrays
 		 * @return string        Value corresponding to item
 		 */
-		public function get_item($item, $index = '')
+		public function get_item($item, $index = "")
 		{
 			$pref = false;
 
-			if ($index == '')
+			if ($index == "")
 			{
 				if (!isset($this->config[$item]))
 				{
@@ -118,5 +118,5 @@
 			return $pref;
 		}
 	}
-	
+
 ?>

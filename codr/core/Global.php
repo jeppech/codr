@@ -1,6 +1,6 @@
 <?php
 
-	if (!function_exists('load_config'))
+	if (!function_exists("load_config"))
 	{
 		function &load_config()
 		{
@@ -11,18 +11,18 @@
 				return $_config;
 			}
 
-			$file_path = APPPATH.'config/'.ENVIRONMENT.'/config.php';
+			$file_path = APPPATH."config/config.php";
 
 			if (!file_exists($file_path))
 			{
-				exit('The config file was not found. Please correct this at: '.APPPATH.'config/'.ENVIRONMENT.'/');
+				exit("The config file was not found. Please correct this at: ".APPPATH."config/");
 			}
 
 			require $file_path;
 
 			if (!isset($config) || !is_array($config))
 			{
-				exit('The config file is not configured properly. Please correct this at: '.APPPATH.'config/'.ENVIRONMENT.'/');
+				exit("The config file is not configured properly. Please correct this at: ".APPPATH."config/");
 			}
 
 			return $_config =& $config;
@@ -39,9 +39,9 @@
  * @return	object
  */
 
-	if (!function_exists('load_class'))
+	if (!function_exists("load_class"))
 	{
-		function &load_class($class, $directory = 'library', $prefix = 'CODR_')
+		function &load_class($class, $directory = "library", $prefix = "CODR_")
 		{
 			static $_classes = array();
 
@@ -61,13 +61,13 @@
 
 			foreach (array(APPPATH,BASEPATH) as $path)
 			{
-				if (file_exists($path.$directory.'/'.$class.'.php'))
+				if (file_exists($path.$directory."/".$class.".php"))
 				{
-					$name = (($prefix == '') || (!$prefix) ? $class : $prefix.$class);
+					$name = (($prefix == "") || (!$prefix) ? $class : $prefix.$class);
 
 					if (class_exists($name) === FALSE)
 					{
-						require $path.$directory.'/'.$class.'.php';
+						require $path.$directory."/".$class.EXT;
 					}
 
 					break;
@@ -76,7 +76,7 @@
 
 			if ($name === FALSE)
 			{
-				exit('Unable to load the requested class: '.$class).'.php';
+				exit("Unable to load the requested class: ".$class.EXT);
 			}
 
 			// Keep track of the loaded classes.
@@ -95,13 +95,13 @@
  * @param string Class name (Optional)
  * @return array
  */
-	if (!function_exists('is_loaded'))
+	if (!function_exists("is_loaded"))
 	{
-		function &is_loaded($class = '')
+		function &is_loaded($class = "")
 		{
 			static $_is_loaded = array();
 
-			if ($class != '')
+			if ($class != "")
 			{
 				$_is_loaded[strtolower($class)] = $class;
 			}
@@ -123,11 +123,11 @@
  * @return string
  */
 
-	if (!function_exists('show_error'))
+	if (!function_exists("show_error"))
 	{
-		function show_error($heading = 'PHP error', $message = 'An unknown error has occured')
+		function show_error($heading = "PHP error", $message = "An unknown error has occured")
 		{
-			$_error =& load_class('Error','core');
+			$_error =& load_class("Error","core");
 			echo $_error->show_error($heading,$message);
 			exit;
 		}
@@ -139,27 +139,27 @@
  * used if a 404_override wasn't detected.
  */
 
-	if (!function_exists('show_404'))
+	if (!function_exists("show_404"))
 	{
 		function show_404($page)
 		{
-			$_error =& load_class('Error','core');
+			$_error =& load_class("Error","core");
 
 			echo $_error->show_404($page);
 			exit;
 		}
 	}
 
-	if (!function_exists('log_message'))
+	if (!function_exists("log_message"))
 	{
 		function log_message($level,$message)
 		{
-			$_log =& load_class('Log','core');
+			$_log =& load_class("Log","core");
 			$_log->log_message($level,$message);
 		}
 	}
 
-	if (!function_exists('toObject'))
+	if (!function_exists("toObject"))
 	{
 		function toObject($array)
 		{
@@ -183,7 +183,7 @@
 /**
  * Print formatted ouput
  */
-	if (!function_exists('dd'))
+	if (!function_exists("dd"))
 	{
 		function dd($data)
 		{
@@ -199,7 +199,7 @@
  * usually used  in view files
  * to produce nice source output.
  */
-	if (!function_exists('no'))
+	if (!function_exists("no"))
 	{
 		function no($string)
 		{
@@ -209,7 +209,7 @@
 /**
  * Translation
  */
-	if (!function_exists('t'))
+	if (!function_exists("t"))
 	{
 		function t($string, $args = array(), $decode = false, $editable = true)
 		{
@@ -218,14 +218,4 @@
 		}
 	}
 
-/**
- * Same as nl2br but REPLACES \r\n instead 
- */
-	if (!function_exists('nl2brBB'))
-	{
-		function nl2brBB($string)
-		{
-			return str_replace(array("\r\n","\r","\n"), "[BR]", $string);
-		}
-	}
 ?>

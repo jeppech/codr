@@ -15,11 +15,11 @@
 
 		function __construct()
 		{
-			$this->uri =& load_class('Uri','core');
+			$this->uri =& load_class("Uri","core");
 
-			$this->config =& load_class('Config','core');
+			$this->config =& load_class("Config","core");
 
-			log_message('debug','Router class initialized');
+			log_message("debug","Router class initialized");
 
 			$this->_set_routing();
 		}
@@ -27,12 +27,12 @@
 		private function _set_routing()
 		{
 			// Include the custom routes, from the router.php config file.
-			include APPPATH.'config/'.ENVIRONMENT.'/router.php';
+			include APPPATH."config/router.php";
 
 			$this->routes = ((isset($routes) && is_array($routes)) ? $routes : array());
 			unset($routes);
 
-			if ($this->uri->uri_string == '')
+			if ($this->uri->uri_string == "")
 			{
 				$this->_set_default_controller();
 			}
@@ -58,11 +58,11 @@
 				 * routes config, if other is specified.
 				 */
 				if (!isset($this->routes[$segments[1]])) {
-					$this->_set_method('index');
+					$this->_set_method("index");
 				}
 				else
 				{
-					$method = explode('/',$this->routes[$segments[1]]);
+					$method = explode("/",$this->routes[$segments[1]]);
 					$this->_set_method($method[1]);
 				}
 			}
@@ -73,14 +73,14 @@
 
 			$this->_set_method_args($segments);
 
-			if (!file_exists(APPPATH.'controllers/'.ENVIRONMENT.'/'.$segments[1].EXT))
+			if (!file_exists(APPPATH."controllers/".ENVIRONMENT."/".$segments[1].EXT))
 			{
-				if (isset($this->routes['404_override']) && !empty($this->routes['404_override']))
+				if (isset($this->routes["404_override"]) && !empty($this->routes["404_override"]))
 				{
-					$x = explode('/', $this->routes['404_override']);
+					$x = explode("/", $this->routes["404_override"]);
 
 					$this->_set_class($x[0]);
-					$this->_set_method(isset($x[1]) ? $x[1] : 'page_missing');
+					$this->_set_method(isset($x[1]) ? $x[1] : "page_missing");
 
 					return $x;
 				}
@@ -99,13 +99,13 @@
 				/* Remove first/last forward slash, and
 				 * escape reserved characters */
 
-				$route = trim($route,'/');
+				$route = trim($route,"/");
 
-				if (preg_match_all('#^'.$route.'$#', $this->uri->uri_string, $matches))
+				if (preg_match_all("#^".$route."$#", $this->uri->uri_string, $matches))
 				{
 					array_shift($matches);
 
-					if (preg_match_all('/\$[0-9]+/', $action, $_act_group))
+					if (preg_match_all("/\$[0-9]+/", $action, $_act_group))
 					{
 
 						$_act_group = $_act_group[0];
@@ -119,7 +119,7 @@
 						}
 					}
 
-					$_segments_temp = explode('/', trim($action, '/'));
+					$_segments_temp = explode("/", trim($action, "/"));
 					$_segments = array();
 
 					foreach ($_segments_temp as $k => $v)
@@ -134,16 +134,16 @@
 
 		private function _set_default_controller()
 		{
-			if (!isset($this->routes['default_controller']))
+			if (!isset($this->routes["default_controller"]))
 			{
 				exit("Could not determine what to view. Please setup a default controller in the routes.php file");
 			}
 
-			$arr_route = explode("/", $this->routes['default_controller']);
+			$arr_route = explode("/", $this->routes["default_controller"]);
 
 			$this->_set_class($arr_route[0]);
 
-			$method = (isset($arr_route[1]) ? $arr_route[1] : 'index');
+			$method = (isset($arr_route[1]) ? $arr_route[1] : "index");
 
 			$this->_set_method($method);
 			$this->_set_method_args($arr_route);

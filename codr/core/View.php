@@ -19,12 +19,12 @@
 
 		public function load($view, $data = null)
 		{
-			$file_path = APPPATH.'views/'.ENVIRONMENT.'/'.$view.EXT;
+			$file_path = APPPATH."views/".$view.EXT;
 
 			if (!file_exists($file_path))
 			{
-				log_message('error','CODR_View->load: Could not load view file. Does not exist '.APPPATH.$view.'.php');
-				show_error('View','Could not load <b>'.$view.'</b>, template does not exist.');
+				log_message("error","CODR_View->load: Could not load view file. Does not exist ".APPPATH.$view.".php");
+				show_error("View","Could not load <b>".$view."</b>, template does not exist.");
 				return;
 			}
 
@@ -41,9 +41,9 @@
 			global $profiler;
 			global $header;
 
-			$elapsed_time = number_format($profiler->elapsed_time('execution_start','execution_end'),6);
-			$memory_used = (!function_exists('memory_get_usage') ? 0 : number_format((memory_get_usage()/1024/1024),3));
-			$memory_peak = (!function_exists('memory_get_peak_usage') ? 0 : number_format((memory_get_peak_usage()/1024/1024),3));
+			$elapsed_time = number_format($profiler->elapsed_time("execution_start","execution_end"),6);
+			$memory_used = (!function_exists("memory_get_usage") ? 0 : number_format((memory_get_usage()/1024/1024),3));
+			$memory_peak = (!function_exists("memory_get_peak_usage") ? 0 : number_format((memory_get_peak_usage()/1024/1024),3));
 
 			ob_start();
 			foreach ($header->get() as $h)
@@ -57,11 +57,11 @@
 			{
 				extract(isset($this->_requested_data[$view]) ? $this->_requested_data[$view] : array());
 
-				$buffer = str_replace('{elapsed_time}', $elapsed_time, file_get_contents($file_path));
-				$buffer = str_replace('{memory_used}', $memory_used, $buffer);
-				$buffer = str_replace('{memory_peak}', $memory_peak, $buffer);
+				$buffer = str_replace("{elapsed_time}", $elapsed_time, file_get_contents($file_path));
+				$buffer = str_replace("{memory_used}", $memory_used, $buffer);
+				$buffer = str_replace("{memory_peak}", $memory_peak, $buffer);
 
-				echo eval(' ?>'.$buffer.PHP_EOL.'<?php ');
+				echo eval(" ?>".$buffer.PHP_EOL."<?php ");
 			}
 			unset($buffer);
 			ob_end_flush();

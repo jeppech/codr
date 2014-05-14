@@ -1,5 +1,5 @@
 <?php
-
+	// @TODO Secure session?
 	session_start();
 /**
  * --------
@@ -11,15 +11,11 @@
 
 /**
  * --------
- * Load constants.
+ * Load global constants.
  * --------
  */
 
-	if (defined("ENVIRONMENT") && file_exists(APPPATH."config/".ENVIRONMENT."/constants.php"))
-	{
-		require_once APPPATH."config/".ENVIRONMENT."/constants.php";
-	}
-	else
+	if (file_exists(APPPATH."config/constants.php"))
 	{
 		require_once APPPATH."config/constants.php";
 	}
@@ -45,7 +41,7 @@
  * -------
  */
 
-	$locale =& load_class("Locale","core");
+	//$locale =& load_class("Locale","core");
 
 /**
  * --------
@@ -94,12 +90,12 @@
 	$method 		=& $router->fetch_method();
 	$method_args 	=& $router->fetch_method_args();
 
-	if (!file_exists(APPPATH."controllers/".ENVIRONMENT."/".$class.EXT))
+	if (!file_exists(APPPATH."controllers/".$class.EXT))
 	{
 		show_404("$class/$method");
 	}
 
-	include(APPPATH."controllers/".ENVIRONMENT."/".$class.EXT);
+	include(APPPATH."controllers/".$class.EXT);
 /**
  * --------
  * Instantiate the View class.

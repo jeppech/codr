@@ -1,16 +1,15 @@
 <?php
-	// Main configuration file
-	require_once "/etc/skyeye.conf.php";
+
 	/**
 	 * codr Framework
 	 *
 	 * @author Jeppe Christiansen <jeppe@codr.dk>
-	 * @version 0.1.11
+	 * @version 0.1
 	 * @package codr framework
 	 */
 
 	define("DIRECT_SCRIPT_ACCESS", 	true);
-	define("ENVIRONMENT",			SkyGlobal::$environment); 		//development, testing, production
+	define("ENVIRONMENT",			"development"); 		//development, testing, production
 
 	if (defined("ENVIRONMENT"))
 	{

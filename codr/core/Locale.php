@@ -19,7 +19,7 @@
 
 		function __construct()
 		{
-			$this->cfg = include 'app/config/development/locale_cfg.php';
+			$this->cfg = include 'app/config/locale_cfg.php';
 			$this->po = new PoParser();
 			if (isset($_SESSION["t_locale"]))
 			{

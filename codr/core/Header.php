@@ -10,10 +10,10 @@
 
 		function __construct()
 		{
-			$this->mimes 				= include APPPATH.'config/'.ENVIRONMENT.'/mimetypes.php';
-			$this->http_response_codes 	= include APPPATH.'config/'.ENVIRONMENT.'/http_response_codes.php';
+			$this->mimes 				= include APPPATH."config/mimetypes.php";
+			$this->http_response_codes 	= include APPPATH."config/http_response_codes.php";
 
-			log_message('debug','Header class initialized');
+			log_message("debug","Header class initialized");
 		}
 
 		public function applyNow()
@@ -34,7 +34,7 @@
 		{
 			if (!isset($header))
 			{
-				show_error('Header','No header was set.');
+				show_error("Header","No header was set.");
 			}
 
 			$this->headers[] = $header;
@@ -57,7 +57,7 @@
 		{
 			if (!isset($code))
 			{
-				show_error('Header','No response code was set.');
+				show_error("Header","No response code was set.");
 			}
 
 			if (isset($this->http_response_codes[$code]) && empty($string))
@@ -66,15 +66,15 @@
 			} else {
 				$this->response = $string;
 			}
-			$protocol = (isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : 'HTTP/1.0');
-			$this->headers[] = $protocol.' '.$code.' '.$this->response;
+			$protocol = (isset($_SERVER["SERVER_PROTOCOL"]) ? $_SERVER["SERVER_PROTOCOL"] : "HTTP/1.0");
+			$this->headers[] = $protocol." ".$code." ".$this->response;
 		}
 
 		public function set_content_type($mime_type,$charset = false)
 		{
 			if (!isset($mime_type))
 			{
-				show_error('Header','Mimetype was not defined.');
+				show_error("Header","Mimetype was not defined.");
 			}
 
 			if (isset($this->mimes[$mime_type]))
@@ -87,7 +87,7 @@
 				}
 			}
 
-			$header = 'Content-Type: '.$this->mime_type.(!$charset ? NULL : ' ;charset=utf-8');
+			$header = "Content-Type: ".$this->mime_type.(!$charset ? NULL : " ;charset=utf-8");
 
 			$this->headers[] = $header;
 		}
