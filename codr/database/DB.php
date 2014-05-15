@@ -23,7 +23,7 @@
 		 * Contains connection information
 		 * @var array
 		 */
-		private $cfg = array();
+		private $cfg = [];
 
 		/**
 		 * True if the system should wrap fields and table
@@ -37,21 +37,21 @@
 		 * in a MySQL query
 		 * @var array
 		 */
-		private $_valid_word_operators = array("LIKE", "LIKE BINARY", "IS NOT NULL", "NOT NULL", "IS NULL", "NOT LIKE");
+		private $_valid_word_operators = ["LIKE", "LIKE BINARY", "IS NOT NULL", "NOT NULL", "IS NULL", "NOT LIKE"];
 
 		/**
 		 * Contains an array of valid join types
 		 * used in a MySQL query
 		 * @var array
 		 */
-		private $_valid_join_types = array("left","right","outer","inner","left outer","right outer");
+		private $_valid_join_types = ["left","right","outer","inner","left outer","right outer"];
 
 		/**
 		 * Defines which mysql statements that is accepted
 		 * for internal use for now.
 		 * @var array
 		 */
-		private $_valid_statements = array(
+		private $_valid_statements = [
 			"select" 	=> "SELECT",
 			"from" 		=> "FROM",
 			"where" 	=> "WHERE",
@@ -65,7 +65,7 @@
 			"insert" 	=> "INSERT INTO",
 			"delete" 	=> "DELETE FROM",
 			"set"		=> "SET",
-			"truncate"	=> "TRUNCATE TABLE");
+			"truncate"	=> "TRUNCATE TABLE"];
 
 		/**
 		 * Defines what type and data shoule be return
@@ -77,75 +77,75 @@
 		 */
 		private $_return_what = 1;
 
-		private $_binds = array();
+		private $_binds = [];
 
 		/**
 		 * [$_lr_insert description]
 		 * @var array
 		 */
-		private $_lr_insert = array();
-		private $_lr_update = array();
-		private $_lr_set = array();
-		private $_lr_delete = array();
-		private $_lr_truncate = array();
+		private $_lr_insert = [];
+		private $_lr_update = [];
+		private $_lr_set = [];
+		private $_lr_delete = [];
+		private $_lr_truncate = [];
 
 		/**
 		 * Which fields should be selected
 		 * including alias conversion
 		 * @var array
 		 */
-		private $_lr_select = array();
+		private $_lr_select = [];
 
 		/**
 		 * From which tables should data be fetched
 		 * including alias conversion
 		 * @var array
 		 */
-		private $_lr_from = array();
+		private $_lr_from = [];
 
 		/**
 		 * Any WHERE statements..?
 		 * @var array
 		 */
-		private $_lr_where = array();
+		private $_lr_where = [];
 
 		/**
 		 * If multiple values were passed to where
 		 * the rest will goto here.
 		 * @var array
 		 */
-		private $_lr_and_where = array();
+		private $_lr_and_where = [];
 
 		/**
 		 * Any OR statements will be dropped here.
 		 * @var array
 		 */
-		private $_lr_or_where = array();
+		private $_lr_or_where = [];
 
 		/**
 		 * Contains any kind of JOINS
 		 * @var array
 		 */
-		private $_lr_join = array();
+		private $_lr_join = [];
 
 		/**
 		 * Contains ORDER BY statement
 		 * since this only can occur once, this is a string.
 		 * @var array
 		 */
-		private $_lr_order = array();
+		private $_lr_order = [];
 
 		/**
 		 * Contains LIMIT statement
 		 * @var string
 		 */
-		private $_lr_limit = array();
+		private $_lr_limit = [];
 
 		/**
 		 * Contains GROUP BY statements
 		 * @var array
 		 */
-		private $_lr_group = array();
+		private $_lr_group = [];
 
 		/**
 		 * Keeps track of the order, which
@@ -153,13 +153,13 @@
 		 * we dont switch e.g. OR/AND
 		 * @var array
 		 */
-		private $_statement_order = array();
+		private $_statement_order = [];
 
 		/**
 		 * Contains the last requested query
 		 * @var string
 		 */
-		private $_last_query = array("query","binds");
+		private $_last_query = ["query","binds"];
 
 		/**
 		 * Contains the last inserted id if any
@@ -537,7 +537,7 @@
 				{
 					list($field,$value) = explode(" ", $fields);
 
-					if (!in_array(strtolower($value), array('asc','desc')))
+					if (!in_array(strtolower($value), ['asc','desc']))
 					{
 						show_error('Database','order_by: The selected order type <b>'.$value.'</b> is not valid.');
 					}
@@ -553,7 +553,7 @@
 				{
 					if (!is_integer($field))
 					{
-						if (!in_array(strtolower($value), array('asc','desc')))
+						if (!in_array(strtolower($value), ['asc','desc']))
 						{
 							show_error('Database','order_by: The selected order type <b>'.$value.'</b> is not valid.');
 						}
@@ -566,7 +566,7 @@
 
 						$_order_as = (isset($order_as) ? $order_as : 'asc');
 
-						if (!in_array(strtolower($_order_as), array('asc','desc')))
+						if (!in_array(strtolower($_order_as), ['asc','desc']))
 						{
 							show_error('Database','order_by: The selected order type <b>'.$_order_as.'</b> is not valid.');
 						}
@@ -598,7 +598,7 @@
 
 				if (isset($order_as) && is_string($order_as))
 				{
-					if (!in_array(strtolower($order_as), array('asc','desc')))
+					if (!in_array(strtolower($order_as), ['asc','desc']))
 					{
 						show_error('Database','order_by: The selected order type <b>'.$order_as.'</b> is not valid.');
 					}
@@ -1057,13 +1057,13 @@
 			{
 				if (isset($this->{'_lr_'.$k}))
 				{
-					$this->{'_lr_'.$k} = array();
+					$this->{'_lr_'.$k} = [];
 				}
 			}
 			$this->_custom_query = null;
-			$this->_query_result = array();
-			$this->_statement_order = array();
-			$this->_binds = array();
+			$this->_query_result = [];
+			$this->_statement_order = [];
+			$this->_binds = [];
 			$this->_return_what = 1;
 		} // _flush_query()
 
@@ -1089,7 +1089,7 @@
 			 * The first one are for functions which
 			 * is comma seperated
 			 */
-			if (in_array($statement, array('select','from','order','group','set','insert')))
+			if (in_array($statement, ['select','from','order','group','set','insert']))
 			{
 				switch ($statement) {
 					case 'insert':
@@ -1110,7 +1110,7 @@
 					$i++;
 				}
 			}
-			else if (in_array($statement, array('where','and_where','or_where','join','where','update','delete','truncate','limit')))
+			else if (in_array($statement, ['where','and_where','or_where','join','where','update','delete','truncate','limit']))
 			{
 				switch ($statement) {
 					case 'update':
@@ -1253,11 +1253,11 @@
 				// Did we find any match?
 				if (!empty($match[0]))
 				{
-					$_replace = array();
+					$_replace = [];
 					// Search through the matches
 					foreach ($match[0] as $k => $v) {
 						$_arr_field = explode('.', $v);
-						$_buffer = array();
+						$_buffer = [];
 						// Wrap field/table with backsticks
 						foreach ($_arr_field as $value)
 						{
@@ -1271,7 +1271,7 @@
 						$_replace[$k] = implode('.', $_buffer);
 					}
 
-					$patterns = array_map(array($this, '_stick_field_regex_match'), $match[0]);
+					$patterns = array_map([$this, '_stick_field_regex_match'], $match[0]);
 
 					// Replace the original string with the formatted string
 					return preg_replace($patterns, $_replace, $field);

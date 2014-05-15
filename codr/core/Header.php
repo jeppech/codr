@@ -3,9 +3,9 @@
 	class CODR_Header
 	{
 
-		public $headers 				= array();
-		private $mimes 					= array();
-		private $http_response_codes 	= array();
+		public $headers 				= [];
+		private $mimes 					= [];
+		private $http_response_codes 	= [];
 		private $mime_type;
 
 		function __construct()
@@ -22,7 +22,7 @@
 			{
 				@header($h);
 			}
-			$this->headers = array();
+			$this->headers = [];
 		}
 
 		public function get()

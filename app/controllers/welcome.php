@@ -8,13 +8,13 @@
 		{
 			parent::__construct();
 
-			$this->_vdata = array(
+			$this->_vdata = [
 				"_media"	=> APPPATH."layout/media/",
 				"_fonts" 	=> APPPATH."layout/fonts/",
 				"_css" 		=> APPPATH."layout/css/",
 				"_js" 		=> APPPATH."layout/js/",
 				"lib" 		=> null
-			);
+			];
 		}
 
 		function index()

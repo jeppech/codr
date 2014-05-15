@@ -9,7 +9,7 @@
 
 		function show_error($heading, $message, $template = 'error_default', $code = 500)
 		{
-			$message = '<p>'.implode('</p><p>', (is_array($message) ? $message : array($message))).'</p>';
+			$message = '<p>'.implode('</p><p>', (is_array($message) ? $message : [$message])).'</p>';
 
 			ob_start();
 			include APPPATH.'errors/'.$template.EXT;

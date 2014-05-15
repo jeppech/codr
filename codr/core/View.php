@@ -8,14 +8,14 @@
 		 * requested with the load method
 		 * @var array
 		 */
-		private $_requested_views = array();
+		private $_requested_views = [];
 
 		/**
 		 * Contains data for the every loaded
 		 * view, through the load method
 		 * @var array
 		 */
-		private $_requested_data = array();
+		private $_requested_data = [];
 
 		public function load($view, $data = null)
 		{
@@ -55,7 +55,7 @@
 			ob_start();
 			foreach ($this->_requested_views as $view => $file_path)
 			{
-				extract(isset($this->_requested_data[$view]) ? $this->_requested_data[$view] : array());
+				extract(isset($this->_requested_data[$view]) ? $this->_requested_data[$view] : []);
 
 				$buffer = str_replace("{elapsed_time}", $elapsed_time, file_get_contents($file_path));
 				$buffer = str_replace("{memory_used}", $memory_used, $buffer);

@@ -6,8 +6,8 @@
 		private $_model_paths;
 		private $_library_paths;
 
-		private $_loaded_models = array();
-		private $_loaded_libraries = array();
+		private $_loaded_models = [];
+		private $_loaded_libraries = [];
 
 		function __construct() {
 			log_message("debug","Loader class initialized");

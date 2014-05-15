@@ -13,13 +13,13 @@
 		 * the URI segments, offset starts at 1.
 		 * @var array
 		 */
-		public $segments 		= array();
+		public $segments 		= [];
 
 		/**
 		 * Contains an array of $_GET variable.
 		 * @var array
 		 */
-		public $query_string 	= array();
+		public $query_string 	= [];
 
 		function __construct()
 		{
@@ -54,7 +54,7 @@
 
 			// Ensure we dont have any leading/trailing slashes.
 
-			return str_replace(array("/","../"), "/", trim($uri,"/"));
+			return str_replace(["/","../"], "/", trim($uri,"/"));
 		}
 
 		/**

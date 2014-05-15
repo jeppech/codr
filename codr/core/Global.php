@@ -43,7 +43,7 @@
 	{
 		function &load_class($class, $directory = "library", $prefix = "CODR_")
 		{
-			static $_classes = array();
+			static $_classes = [];
 
 			if (isset($_classes[$class]))
 			{
@@ -59,7 +59,7 @@
 			 * --------
 			 */
 
-			foreach (array(APPPATH,BASEPATH) as $path)
+			foreach ([APPPATH,BASEPATH] as $path)
 			{
 				if (file_exists($path.$directory."/".$class.".php"))
 				{
@@ -99,7 +99,7 @@
 	{
 		function &is_loaded($class = "")
 		{
-			static $_is_loaded = array();
+			static $_is_loaded = [];
 
 			if ($class != "")
 			{
@@ -211,7 +211,7 @@
  */
 	if (!function_exists("t"))
 	{
-		function t($string, $args = array(), $decode = false, $editable = true)
+		function t($string, $args = [], $decode = false, $editable = true)
 		{
 			$_locale = load_class("Locale","core");
 			return $_locale->t($string, $args, $decode, $editable);

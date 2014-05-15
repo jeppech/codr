@@ -5,7 +5,7 @@
 		/**
 		 * Container profiler point
 		 */
-		private $_profile_point = array();
+		private $_profile_point = [];
 
 		function __construct()
 		{

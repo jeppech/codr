@@ -14,7 +14,7 @@
 		private $po;
 		private $domain;
 
-		private static $_buffer_entries = array();
+		private static $_buffer_entries = [];
 		private static $_DOMAIN_PATH;
 
 		function __construct()
@@ -39,7 +39,7 @@
 				// Holding registered translations, so we dont have to read from the po file on every page request.
 				if (!isset($_SESSION["t_buffer_registered"]))
 				{
-					$_SESSION["t_buffer_registered"] = array();
+					$_SESSION["t_buffer_registered"] = [];
 				}
 			}
 			log_message('debug','Locale class initialized');
@@ -131,12 +131,12 @@
 
 		public function get_settings()
 		{
-			return array(
+			return [
 				"locales"	=> $this->cfg["locales"],
 				"locale"	=> $this->locale,
 				"editable"	=> $this->editable,
 				"domain"	=> $this->domain
-			);
+			];
 		}
 
 		/**
@@ -148,14 +148,14 @@
 		 * @param  bool 		$editable
 		 * @return string 		Rendered string
 		 */
-		public function t($msgid, $args = array(), $decode = false, $editable = true)
+		public function t($msgid, $args = [], $decode = false, $editable = true)
 		{
 			if ($msgid != "" && !empty($msgid))
 			{
 				$msgid 		= $this->sanitized($msgid);
 				$msgstr 	= str_replace("[BR]","<br />",gettext($msgid));
 				$string 	= null;
-				$vars 		= array();
+				$vars 		= [];
 
 				// Check if the msgid is registerd in the language files.
 				// Notice. increases page load significantly
@@ -167,8 +167,8 @@
 				// Render string, if any arguments is passed.
 				if (!empty($args))
 				{
-					$search 	= array();
-					$replace 	= array();
+					$search 	= [];
+					$replace 	= [];
 
 					foreach ($args as $k => $v)
 					{
@@ -279,11 +279,11 @@
 				fwrite($fh, $entry);
 				fclose($fh);
 
-				self::$_buffer_entries[$locale][$msgid_san] = array(
+				self::$_buffer_entries[$locale][$msgid_san] = [
 					"tcomment" 	=> $comment,
 					"msgid" 	=> $msgid_san,
 					"msgstr" 	=> $msgstr_san
-				);
+				];
 			}
 
 			return true;
@@ -343,7 +343,7 @@
 		 */
 		public function missing_entries($msgid)
 		{
-			$_missing 	= array();
+			$_missing 	= [];
 			$msgid 		= $this->sanitized($msgid);
 
 			foreach ($this->locales as $locale)

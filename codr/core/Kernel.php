@@ -134,7 +134,7 @@
 		show_404("$class/$method");
 	}
 
-	call_user_func_array(array(&$codr, $method), $method_args);
+	call_user_func_array([&$codr, $method], $method_args);
 
 /**
  * -------

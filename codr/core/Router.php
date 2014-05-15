@@ -29,7 +29,7 @@
 			// Include the custom routes, from the router.php config file.
 			include APPPATH."config/router.php";
 
-			$this->routes = ((isset($routes) && is_array($routes)) ? $routes : array());
+			$this->routes = ((isset($routes) && is_array($routes)) ? $routes : []);
 			unset($routes);
 
 			if ($this->uri->uri_string == "")
@@ -120,7 +120,7 @@
 					}
 
 					$_segments_temp = explode("/", trim($action, "/"));
-					$_segments = array();
+					$_segments = [];
 
 					foreach ($_segments_temp as $k => $v)
 					{

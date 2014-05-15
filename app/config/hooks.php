@@ -1,17 +1,17 @@
 <?php
 
-	$hooks = array(
-		"pre_system"	=> array(
-			array(
+	$hooks = [
+		"pre_system"	=> [
+			[
 				"filename" => "",
 				"filepath" => ""
-			)
-		),
-		"post_system"	=> array(
-			array(
+			]
+		],
+		"post_system"	=> [
+			[
 				"filename" => "",
 				"filepath" => ""
-			)
-		)
-	);
+			]
+		]
+	];
 ?>

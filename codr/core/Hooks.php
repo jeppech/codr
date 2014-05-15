@@ -3,7 +3,7 @@
 	class CODR_Hooks
 	{
 
-		private $_hooks = array();
+		private $_hooks = [];
 		private $_enabled = false;
 
 		function __construct()

@@ -7,9 +7,9 @@
 		 * @var array
 		 */
 
-		public $config = array();
+		public $config 			= [];
 
-		private $_cfg_loaded = array();
+		private $_cfg_loaded 	= [];
 
 		public function __construct()
 		{
@@ -44,7 +44,7 @@
 			$file 	= str_replace(".php", "", $file);
 			$loaded = false;
 
-			$check_location = array(APPPATH);
+			$check_location = [APPPATH];
 
 			foreach ($check_location as $location) {
 				$file_path = $location."config/".$file.EXT;
