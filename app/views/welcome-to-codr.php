@@ -25,7 +25,7 @@
 		}
 		p
 		{
-			border: 1px solid #b9cfd5;
+			border-left: 4px solid #b9cfd5;
 			background: #deeff4;
 			font-size: 14px;
 			font-family: 'Verdana', 'Century Gothic';
