@@ -39,7 +39,7 @@
 	</head>
 	<body>
 		<div id="wrapper">
-			<img src="/<?=APPPATH.'layout/media/codr.png'?>" alt="codr logo" title="Welcome to codr Framework" />
+			<img src="/<?=APPPATH.'layout/media/codr.svg'?>" alt="codr logo" title="Welcome to codr Framework" />
 			<p>
 				codr is a tiny framework, that is powered by the PHP platform.
 				<br /><br />
