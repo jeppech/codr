@@ -1,5 +1,4 @@
 <?php
-	// Important fixes
 	// @TODO Secure session?
 	session_start();
 /**
