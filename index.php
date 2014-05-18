@@ -4,7 +4,7 @@
 	 * codr Framework
 	 *
 	 * @author Jeppe Christiansen <jeppe@codr.dk>
-	 * @version 0.1
+	 * @version 0.2
 	 * @package codr framework
 	 */
 
