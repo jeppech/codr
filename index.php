@@ -1,6 +1,7 @@
 <?php
 
 	/**
+	 *
 	 * codr Framework
 	 *
 	 * @author Jeppe Christiansen <jeppe@codr.dk>
